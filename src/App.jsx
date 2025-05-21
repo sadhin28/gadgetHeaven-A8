@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="w-11/12 mx-auto">
         <Navbar></Navbar>
-       <div className="min-h-[calc(100vh-50px)]">
+       <div className="min-h-[calc(100vh-100px)]">
           <Outlet></Outlet>
        </div>
        <Footer></Footer>

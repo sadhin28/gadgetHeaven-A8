@@ -1,4 +1,7 @@
 import { Link,  NavLink } from "react-router-dom";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+import { AiOutlineHeart } from "react-icons/ai";
+
 import '../Nav/Navbar.css'
 const Navbar = () => {
     const links =<>
@@ -31,7 +34,12 @@ const Navbar = () => {
                 </ul>
                    
             </div>
-            
+            <div className="">
+                <div className="flex gap-2 ju">
+                   <HiOutlineShoppingCart />
+                   <AiOutlineHeart />
+                </div>
+            </div>
         </div>
     );
 };
