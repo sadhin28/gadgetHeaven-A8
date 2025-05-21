@@ -4,13 +4,13 @@ import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <>
-       <Navbar></Navbar>
+    <div className="w-11/12 mx-auto">
+        <Navbar></Navbar>
        <div className="min-h-[calc(100vh-50px)]">
           <Outlet></Outlet>
        </div>
        <Footer></Footer>
-    </>
+    </div>
   )
 }
 

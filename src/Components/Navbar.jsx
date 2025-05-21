@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
-            <h1>NavBar</h1>
+        <div className='h-20 bg-[#9538E2]'>
+            
         </div>
     );
 };
