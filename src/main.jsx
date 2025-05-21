@@ -8,7 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Components/Home.jsx';
+import Home from './Components/Home/Home.jsx';
 import Statistics from './Components/Statistics.jsx';
 import Dashboard from './Components/Dashboard.jsx';
 

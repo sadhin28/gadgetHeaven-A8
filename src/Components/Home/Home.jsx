@@ -1,13 +1,16 @@
-
+import './Home.css'
+import image from '../../assets/banner.jpg'
 const Home = () => {
     return (
         <div className=''>
+           
            <div className='mb-10 bg-[#9538E2] h-[510px] md:h-[610px]' >
-                <div id='banner' className='mb-10 h-[310px] w-8/12 relative top-100 mx-auto md:h-[410px]'>
-                       
-                </div>
+               
            </div>
-            <div className='flex gap-10 mt-100'>
+            <div id='banner' className='w-9/12 mx-auto md:h-120 h-50  relative bottom-35 md:bottom-70'>
+                <img className='w-full h-full' src={image} alt="" />
+            </div>
+            <div className='flex gap-10 '>
                     <div className=' h-70 border w-3/12'>
 
                     </div>
