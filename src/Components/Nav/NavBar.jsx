@@ -3,7 +3,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 
 import '../Nav/Navbar.css'
-import { useState } from "react";
+
 const Navbar = () => {
 
     const links =<>
@@ -12,7 +12,7 @@ const Navbar = () => {
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky  hover:shadow-sm top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
+        <div className="sticky  shadow-sm  top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
