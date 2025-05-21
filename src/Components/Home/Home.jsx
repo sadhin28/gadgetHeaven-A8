@@ -3,7 +3,6 @@ import image from '../../assets/banner.jpg'
 import { NavLink, Outlet, useLoaderData } from 'react-router-dom';
 const Home = () => {
     const category= useLoaderData()
-    console.log(category)
     return (
         <div className=''>
            

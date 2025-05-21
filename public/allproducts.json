@@ -1,5 +1,5 @@
 [
-   { "id": 1, "name": "Dell XPS 13", "image": "https://example.com/images/dell-xps-13.jpg", "category": "Laptop", "rating": 4.7 },
+  { "id": 1, "name": "Dell XPS 13", "image": "https://example.com/images/dell-xps-13.jpg", "category": "Laptop", "rating": 4.7 },
   { "id": 2, "name": "HP Spectre x360", "image": "https://example.com/images/hp-spectre-x360.jpg", "category": "Laptop", "rating": 4.6 },
   { "id": 3, "name": "Lenovo Yoga Slim 7", "image": "https://example.com/images/yoga-slim7.jpg", "category": "Laptop", "rating": 4.4 },
   { "id": 4, "name": "Asus ZenBook 14", "image": "https://example.com/images/zenbook-14.jpg", "category": "Laptop", "rating": 4.5 },

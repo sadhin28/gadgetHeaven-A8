@@ -1,11 +1,11 @@
 import { useLoaderData, useParams } from "react-router-dom";
 
 const GadgetContainer = () => {
-    const gadgetdata = useLoaderData();
-    console.log(gadgetdata)
-    const obj = useParams();
-    const gadgets= gadgetdata.filter(data=>data.category === obj.category)
-   
+     const obj=useParams();
+     const gadets = useLoaderData();
+     
+     const  gadegetData = gadets.filter(data=>data.category === obj.category)
+     console.log(gadegetData)
     return (
         <div>
             <h1>hi</h1>
