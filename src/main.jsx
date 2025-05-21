@@ -11,6 +11,7 @@ import {
 import Home from './Components/Home/Home.jsx';
 import Statistics from './Components/Statistics.jsx';
 import Dashboard from './Components/Dashboard.jsx';
+import GadgetContainer from './Components/GadgetContainer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,16 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
+        loader:()=>fetch('../cagegory.json'),
+        children:[
+          {
+            path:`/gadeget/:category`,
+            element:<GadgetContainer></GadgetContainer>,
+            loader:()=>fetch('../coffees.json')
+
+          }
+
+        ]
       },{
         path:'Statistics',
         element:<Statistics></Statistics>
