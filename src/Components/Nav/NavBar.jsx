@@ -3,7 +3,9 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 
 import '../Nav/Navbar.css'
+import { useState } from "react";
 const Navbar = () => {
+    const [cart,setcart]=useState(0)
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
@@ -33,12 +35,17 @@ const Navbar = () => {
                  }
                 </ul>  
             </div>
-            <div className="text-end">
-                <div className="flex text-2xl gap-2 ju">
-                   <HiOutlineShoppingCart />
-                   <AiOutlineHeart />
+           
+                <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
+                        <div className="">
+                            <HiOutlineShoppingCart />
+                        </div>
+                        <div>
+                            <AiOutlineHeart />
+                        </div>
                 </div>
-            </div>
+          
+               
         </div>
     );
 };
