@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home.jsx';
 import Statistics from './Components/Statistics.jsx';
-import Dashboard from './Dashboard.jsx';
+import Dashboard from './Components/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {

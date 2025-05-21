@@ -1,5 +1,5 @@
 import { Link,  NavLink } from "react-router-dom";
-
+import '../Nav/Navbar.css'
 const Navbar = () => {
     const links =<>
          <NavLink to="/">Home</NavLink>
@@ -7,7 +7,7 @@ const Navbar = () => {
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky top-0 z-30 navbar bg-purple-700 transform-border scale-3d border-b-amber-50  ">
+        <div className="sticky top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d border-b-amber-50  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className=" btn-ghost text-xl md:text-2xl font-bold">Book Vibe</a>
+                <a className=" btn-ghost text-xl md:text-2xl font-bold">Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu text-xl menu-horizontal px-1 flex gap-5 items-center ">
