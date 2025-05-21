@@ -7,7 +7,7 @@ const Navbar = () => {
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky top-0 z-30 navbar bg-base-100 shadow-sm">
+        <div className="sticky top-0 z-30 navbar bg-purple-700 transform-border scale-3d border-b-amber-50  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
