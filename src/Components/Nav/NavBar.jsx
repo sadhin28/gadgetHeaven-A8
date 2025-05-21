@@ -31,11 +31,10 @@ const Navbar = () => {
                  {
                  links
                  }
-                </ul>
-                   
+                </ul>  
             </div>
-            <div className="">
-                <div className="flex gap-2 ju">
+            <div className="text-end">
+                <div className="flex text-2xl gap-2 ju">
                    <HiOutlineShoppingCart />
                    <AiOutlineHeart />
                 </div>
