@@ -2,8 +2,8 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div className='mt-10'>
-           <div className='bg-[#9538E2]'>
+        <div className=''>
+           <div className='bg-[#9538E2] h-[810px]' >
 
            </div>
             <div className='flex gap-10'>

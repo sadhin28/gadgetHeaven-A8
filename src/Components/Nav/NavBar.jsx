@@ -5,14 +5,14 @@ import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
 import { useState } from "react";
 const Navbar = () => {
-    const [cart,setcart]=useState(0)
+
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d border-b-amber-50  ">
+        <div className="sticky  hover:shadow-sm top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,10 +37,10 @@ const Navbar = () => {
             </div>
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
-                        <div className="">
+                        <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />
                         </div>
-                        <div>
+                        <div className="p-2 bg-amber-50 rounded-full">
                             <AiOutlineHeart />
                         </div>
                 </div>
