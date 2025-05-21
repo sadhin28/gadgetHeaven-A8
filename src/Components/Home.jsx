@@ -1,11 +1,10 @@
-import React from 'react';
 
 const Home = () => {
     return (
         <div className=''>
            <div className='mb-10 bg-[#9538E2] h-[510px] md:h-[610px]' >
-                <div className='mb-10 bg-[#41e238] h-[310px] w-8/12 relative top-100 mx-auto md:h-[410px]'>
-
+                <div id='banner' className='mb-10 h-[310px] w-8/12 relative top-100 mx-auto md:h-[410px]'>
+                       
                 </div>
            </div>
             <div className='flex gap-10 mt-100'>
