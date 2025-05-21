@@ -15,7 +15,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="text-xl gird gap-3 menu duration-1000 menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-3 w-52 p-2 shadow">
                         {
                             links
                         }
@@ -23,7 +23,7 @@ const Navbar = () => {
                 </div>
                 <a className=" btn-ghost text-xl md:text-2xl font-bold">Gadget Heaven</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center  hidden lg:flex">
                 <ul className="menu text-xl menu-horizontal px-1 flex gap-5 items-center ">
                  {
                  links
