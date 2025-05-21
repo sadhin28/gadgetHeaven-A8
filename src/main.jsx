@@ -26,7 +26,7 @@ const router = createBrowserRouter([
           {
             path:`/gadeget/:category`,
             element:<GadgetContainer></GadgetContainer>,
-            loader:()=>fetch('../coffees.json')
+            loader:()=>fetch('../allproducts.json')
 
           }
 
