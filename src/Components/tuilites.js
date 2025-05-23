@@ -16,7 +16,20 @@ const addtoStoredGadgetList =(id)=>{
       if(storedList.includes(id)){
           toast.error("This Product Is exist in the Dashboard")
       }else{
-        
+        storedList.push(id);
+        const storedLists=JSON.stringify(storedList);
+        localStorage.setItem('gadget-list',storedLists)
       }
 }
-export {getStoredGadgetList,addtoStoredGadgetList}
+
+const saveCartToLs = cart =>{
+    const cartStringyfy = JSON.stringify(cart);
+    localStorage.setItem('gadget-list',cartStringyfy)
+}
+
+const removeFromLs= id =>{
+    const card = getStoredGadgetList();
+    const remaining = card.filter(idx=> idx !== id)
+    saveCartToLs (remaining)
+}
+export {getStoredGadgetList,addtoStoredGadgetList,removeFromLs}

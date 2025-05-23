@@ -24,7 +24,7 @@ const Card = ({ product}) => {
             <div className="badge badge-outline">Rating {rating}</div>
             <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
             
-            <Link onClick={()=>addtoStoredGadgetList(`${id}`)}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</div></Link>
+            <Link  onClick={()=>addtoStoredGadgetList(id)}  ><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</div></Link>
 
           </div>
         </div>
