@@ -10,7 +10,7 @@ const GadgetContainer = () => {
     return (
         <div>
             {
-                gadegetData.map(product=><Card key={product.id} product={product}></Card>)
+              gadegetData.map(product=><Card key={product.id} product={product}></Card>)
             }
         </div>
     );
