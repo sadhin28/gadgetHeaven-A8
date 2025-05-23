@@ -6,17 +6,17 @@ const Card = ({ product }) => {
   console.log()
   return (
     <div>
-      <div className="card bg-base-100 w-70 shadow-sm">
+      <div className="card  border-amber-700 bg-base-100 w-70 shadow-sm">
         <figure>
           <img
-            className='h-50 w-full'
+            className='h-40 w-full'
             src={image}
             alt="Shoes" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">
             <div>{name}</div>
-           <small className='bg-amber-700 text-white p-2 rounded-xl'>{price} Tk</small>
+           <small className='bg-amber-700 text-sm text-white p-2 rounded-xl'>{price} Tk</small>
           </h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div className="card-actions justify-end">

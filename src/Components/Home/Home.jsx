@@ -21,14 +21,14 @@ const Home = () => {
              <h1 className='text-center  md:text-4xl font-bold relative bottom-35 text-2xl '>Explore Cutting-Edge Gadgets</h1>
             <div  className='flex gap-10 '>
                 
-                    <div className='border w-3/12 card'>
-                       <div id='gadeget-container' className='grid  gap-5 justify-items-center'>
+                    <div className=' w-3/12 '>
+                       <div id='gadeget-container' className='grid sticky top-20  gap-5 justify-items-center'>
                            {
                            category.map(data=><NavLink className='bg-blue-100  hover:text-white hover:bg-blue-700 text-center card py-2 w-30' key={data.category} to={`/gadeget/${data.category}`}>{data.category}</NavLink>)
                             }
                        </div>
                     </div>
-                    <div className='border w-full card'>
+                    <div className=' w-full card'>
             
                          <div>
                             <Outlet></Outlet>
