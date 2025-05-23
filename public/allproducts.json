@@ -1,7 +1,7 @@
 [
-  {"id": 1, "name": "Dell XPS 13", "image": "https://example.com/images/dell-xps-13.jpg", "category": ["Laptop", "All"], "rating": 4.7, "price": 999},
-  {"id": 2, "name": "HP Spectre x360", "image": "https://example.com/images/hp-spectre-x360.jpg", "category": ["Laptop", "All"], "rating": 4.6, "price": 1149},
-  {"id": 3, "name": "Lenovo Yoga Slim 7", "image": "https://example.com/images/yoga-slim7.jpg", "category": ["Laptop", "All"], "rating": 4.4, "price": 899},
+  {"id": 1, "name": "Dell XPS 13", "image": "https://images.idgesg.net/images/article/2017/08/dell_xps_13_right_side_half-open_3qtr-cropped-100733555-orig.jpg", "category": ["Laptop", "All"], "rating": 4.7, "price": 999},
+  {"id": 2, "name": "HP Spectre x360", "image": "https://i1.wp.com/witchdoctor.co.nz/wp-content/uploads/2019/08/HP-SPectre-x360-1.jpg?ssl=1", "category": ["Laptop", "All"], "rating": 4.6, "price": 1149},
+  {"id": 3, "name": "Lenovo Yoga Slim 7", "image": "https://img.mbizmarket.co.id/products/thumbs/800x800/2023/02/07/660b271ad069f7c499fb6f7ce6f2d681.jpg", "category": ["Laptop", "All"], "rating": 4.4, "price": 899},
   {"id": 4, "name": "Asus ZenBook 14", "image": "https://example.com/images/zenbook-14.jpg", "category": ["Laptop", "All"], "rating": 4.5, "price": 1099},
   {"id": 5, "name": "Acer Swift 5", "image": "https://example.com/images/acer-swift-5.jpg", "category": ["Laptop", "All"], "rating": 4.3, "price": 849},
   {"id": 6, "name": "MSI Modern 15", "image": "https://example.com/images/msi-modern-15.jpg", "category": ["Laptop", "All"], "rating": 4.2, "price": 799},
