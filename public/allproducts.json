@@ -54,14 +54,14 @@
   {"id": 49, "name": "MacBook Pro 14-inch Intel", "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/og-macbook-pro-202301?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1670261864358", "category": ["MacBook", "All"], "rating": 4.4, "price": 1699},
   {"id": 50, "name": "MacBook Air Retina", "image": "https://images.idgesg.net/images/article/2018/11/macbook-air-2108-hero2-100779122-orig.jpeg", "category": ["MacBook", "All"], "rating": 4.5, "price": 899},
 
-  {"id": 51, "name": "iPhone 15 Pro Max", "image": "https://example.com/images/iphone-15-pro-max.jpg", "category": ["iPhone", "All"], "rating": 4.9, "price": 1199},
-  {"id": 52, "name": "iPhone 15 Pro", "image": "https://example.com/images/iphone-15-pro.jpg", "category": ["iPhone", "All"], "rating": 4.8, "price": 999},
-  {"id": 53, "name": "iPhone 15 Plus", "image": "https://example.com/images/iphone-15-plus.jpg", "category": ["iPhone", "All"], "rating": 4.7, "price": 899},
-  {"id": 54, "name": "iPhone 15", "image": "https://example.com/images/iphone-15.jpg", "category": ["iPhone", "All"], "rating": 4.6, "price": 799},
-  {"id": 55, "name": "iPhone 14 Pro Max", "image": "https://example.com/images/iphone-14-pro-max.jpg", "category": ["iPhone", "All"], "rating": 4.7, "price": 1099},
-  {"id": 56, "name": "iPhone 14 Pro", "image": "https://example.com/images/iphone-14-pro.jpg", "category": ["iPhone", "All"], "rating": 4.6, "price": 999},
-  {"id": 57, "name": "iPhone 14 Plus", "image": "https://example.com/images/iphone-14-plus.jpg", "category": ["iPhone", "All"], "rating": 4.5, "price": 899},
-  {"id": 58, "name": "iPhone 14", "image": "https://example.com/images/iphone-14.jpg", "category": ["iPhone", "All"], "rating": 4.4, "price": 799},
-  {"id": 59, "name": "iPhone SE 2022", "image": "https://example.com/images/iphone-se-2022.jpg", "category": ["iPhone", "All"], "rating": 4.3, "price": 429},
-  {"id": 60, "name": "iPhone 13 Pro Max", "image": "https://example.com/images/iphone-13-pro-max.jpg", "category": ["iPhone", "All"], "rating": 4.5, "price": 899}
+  {"id": 51, "name": "iPhone 15 Pro Max", "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2023/10/iphone-15-pro-max-1.JPG", "category": ["iPhone", "All"], "rating": 4.9, "price": 1199},
+  {"id": 52, "name": "iPhone 15 Pro", "image": "https://cdn.appuals.com/wp-content/uploads/2023/09/iPhone-15-Pro-Colors-Mock-Feature.jpg", "category": ["iPhone", "All"], "rating": 4.8, "price": 999},
+  {"id": 53, "name": "iPhone 15 Plus", "image": "https://www.teknoburada.net/wp-content/uploads/2022/12/iphone-15.jpg", "category": ["iPhone", "All"], "rating": 4.7, "price": 899},
+  {"id": 54, "name": "iPhone 15", "image": "https://img.freepik.com/premium-photo/isolated-iphone-15-mobile-front-back-showcasing-sleek-desig-white-background-clean_655090-800987.jpg?w=2000", "category": ["iPhone", "All"], "rating": 4.6, "price": 799},
+  {"id": 55, "name": "iPhone 14 Pro Max", "image": "https://d.newsweek.com/en/full/2118672/iphone-14-pro.jpg", "category": ["iPhone", "All"], "rating": 4.7, "price": 1099},
+  {"id": 56, "name": "iPhone 14 Pro", "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2022/10/27132149/iPhone-14-Pro-Back-Purple-scaled.jpg", "category": ["iPhone", "All"], "rating": 4.6, "price": 999},
+  {"id": 57, "name": "iPhone 14 Plus", "image": "https://th.bing.com/th/id/OIP.e943jRQHTUQBM4LXS9w6mgHaHa?rs=1&pid=ImgDetMain", "category": ["iPhone", "All"], "rating": 4.5, "price": 899},
+  {"id": 58, "name": "iPhone 14", "image": "https://cdn.techjuice.pk/wp-content/uploads/2023/03/iphone-14-yelow-hands-on-2-scaled.jpg", "category": ["iPhone", "All"], "rating": 4.4, "price": 799},
+  {"id": 59, "name": "iPhone SE 2022", "image": "https://www.digitaltrends.com/wp-content/uploads/2022/08/iPhone-SE-2022-Starlight-Back-in-Hand.jpg?p=1", "category": ["iPhone", "All"], "rating": 4.3, "price": 429},
+  {"id": 60, "name": "iPhone 13 Pro Max", "image": "https://www.androidauthority.com/wp-content/uploads/2021/09/Apple-iPhone-13-Pro-Max-hero-image-on-wood-4-1280w-720h.jpg", "category": ["iPhone", "All"], "rating": 4.5, "price": 899}
 ]
