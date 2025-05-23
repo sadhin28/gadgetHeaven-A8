@@ -28,6 +28,10 @@ const router = createBrowserRouter([
             element:<GadgetContainer></GadgetContainer>,
             loader:()=>fetch('../allproducts.json')
 
+          },
+          {
+            path:`/gadeget/:id`,
+            
           }
 
         ]

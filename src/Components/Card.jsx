@@ -1,24 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({product}) => {
+  const {name,image,id,price,rating}=product
     console.log()
     return (
         <div>
-           <div className="card bg-base-100 w-96 shadow-sm">
+           <div className="card bg-base-100 w-70 shadow-sm">
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+     className='h-50 w-full'
+      src={image}
       alt="Shoes" />
   </figure>
   <div className="card-body">
     <h2 className="card-title">
-      Card Title
-      <div className="badge badge-secondary">NEW</div>
+      {name}
+      <div className="badge badge-secondary">Price : {price}</div>
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions justify-end">
-      <div className="badge badge-outline">Fashion</div>
-      <div className="badge badge-outline">Products</div>
+      <div className="badge badge-outline">Rating {rating}</div>
+      <Link to={`/gadeget/${id}`}><div className="badge badge-outline btn">Details</div></Link>
     </div>
   </div>
 </div>
