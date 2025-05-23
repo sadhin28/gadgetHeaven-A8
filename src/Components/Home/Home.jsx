@@ -18,7 +18,7 @@ const Home = () => {
             <div id='banner' className=' w-9/12 mx-auto md:h-120 h-50  relative bottom-35 md:bottom-70'>
                 <img className='w-full rounded-2xl h-full' src={image} alt="" />
             </div>
-             <h1 className='text-center  md:text-4xl font-bold relative bottom-35 text-2xl '>Explore Cutting-Edge Gadgets</h1>
+             <h1 className='text-center  md:text-4xl font-bold relative md:bottom-35 bottom-20 text-2xl '>Explore Cutting-Edge Gadgets</h1>
             <div  className='flex gap-10 '>
                 
                     <div className=' w-3/12 '>
