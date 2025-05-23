@@ -12,6 +12,7 @@ import Home from './Components/Home/Home.jsx';
 import Statistics from './Components/Statistics.jsx';
 import Dashboard from './Components/Dashboard.jsx';
 import GadgetContainer from './Components/GadgetContainer.jsx';
+import Detail from './Components/Detail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,19 +31,22 @@ const router = createBrowserRouter([
 
           },
           {
-            path:`/gadeget/:id`,
-            
-          }
+            path:`/details/:id`,
+            element:<Detail></Detail>,
+            loader:()=>fetch('../allproducts.json')
+           }
 
         ]
-      },{
+      },
+      {
         path:'Statistics',
         element:<Statistics></Statistics>
       },
       {
         path:'Dashboard',
         element:<Dashboard></Dashboard>
-      }
+      },
+      
     ]
   },
 ]);

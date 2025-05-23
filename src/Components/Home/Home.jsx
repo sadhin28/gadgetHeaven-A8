@@ -22,9 +22,9 @@ const Home = () => {
             <div  className='flex gap-10 '>
                 
                     <div className='border w-3/12 card'>
-                       <div id='gadeget-container' className='grid p-3  gap-5 justify-items-center'>
+                       <div id='gadeget-container' className='grid  gap-5 justify-items-center'>
                            {
-                           category.map(data=><NavLink key={data.category} to={`/gadeget/${data.category}`}>{data.category}</NavLink>)
+                           category.map(data=><NavLink className='bg-blue-100  hover:text-white hover:bg-blue-700 text-center card py-2 w-30' key={data.category} to={`/gadeget/${data.category}`}>{data.category}</NavLink>)
                             }
                        </div>
                     </div>
