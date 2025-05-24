@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const DashboardCard = ({data,DeleteCard}) => {
+      
       const { name, image, id, price, rating } = data
       
     return (

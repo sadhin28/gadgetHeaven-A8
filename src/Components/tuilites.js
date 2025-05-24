@@ -10,7 +10,7 @@ const getStoredReadList =()=>{
     }
 }   
 
-const addToStoredReadList=(id,n)=>{
+const addToStoredReadList=(id)=>{
      
     const storedList = getStoredReadList();
     if(storedList.includes(id)){
@@ -18,7 +18,7 @@ const addToStoredReadList=(id,n)=>{
         toast.error(`This Gadget alrady exists in the Dashboard`)
     }
     else{
-        incremen(n)
+        
         storedList.push(id);
         const storedListstr = JSON.stringify(storedList);
         localStorage.setItem('gadget-list',storedListstr)
@@ -38,11 +38,9 @@ const removeFromLs =id=>{
    saveCartToLs(remaining);
 }
 
-const incremen =id=>{
-     const data =id;
-     return data;
-}
+  
 
 
 
-export {addToStoredReadList,getStoredReadList,removeFromLs,incremen}
+
+export {addToStoredReadList,getStoredReadList,removeFromLs}

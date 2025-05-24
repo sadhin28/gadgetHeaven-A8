@@ -2,20 +2,24 @@ import {  NavLink } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
-import { incremen } from "../tuilites";
+import { useState } from "react";
+
 
 
 
 const Navbar = () => {
-     
-     const i=incremen()
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky  rounded-t-2xl shadow-sm  top-0 z-30 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
+        <div className="sticky  rounded-t-2xl shadow-sm h-20 top-0 z-20 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +27,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-3 w-52 p-2 shadow">
+                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-5 w-52 p-2 shadow">
                         {
                             links
                         }
@@ -40,14 +44,16 @@ const Navbar = () => {
             </div>
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
+                         <div className="relative text-center   left-13 bottom-4">
+                                {count}
+                         </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />
+                           
                         </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <AiOutlineHeart />
-                            <div id="increment">
-                                  {i}
-                            </div>
+                            
                         </div>
                 </div>
           
@@ -56,4 +62,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar ;
