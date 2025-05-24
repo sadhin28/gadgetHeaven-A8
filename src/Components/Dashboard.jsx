@@ -9,7 +9,8 @@ const Dashboard = () => {
     
     
    const [addGadgets,setaddcoffee]=useState([])
-   console.log(addGadgets.length)
+   const totalprice = addGadgets.reduce((sum,product)=>sum+ product.price,0);
+   
    useEffect(()=>{
      const storedCoffee = getStoredReadList();
      const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
@@ -25,9 +26,9 @@ const Dashboard = () => {
      }
     return (
         <div>
-           <div className="">
+           <div className="text-2xl text-center bg-amber-50 sticky top-20 z-40 mb-10 ">
               {
-                addGadgets.length
+                `Total Price for ${addGadgets.length} Products (${totalprice})`
               }
            </div>
            <div className="grid gap-5 mt-5">

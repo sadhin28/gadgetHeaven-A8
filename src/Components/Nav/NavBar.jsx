@@ -1,4 +1,4 @@
-import {  NavLink, useLoaderData } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
