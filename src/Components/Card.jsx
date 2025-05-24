@@ -4,7 +4,7 @@ import { addToStoredReadList } from './tuilites';
 
 
 const Card = ({ product}) => {
-  
+ 
   const { name, image, id, price, rating } = product
  
   return (
@@ -25,7 +25,7 @@ const Card = ({ product}) => {
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Rating {rating}</div>
             <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
-             <Link  onClick={()=>addToStoredReadList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+            <Link to={``}   onClick={()=>addToStoredReadList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
              
           </div>
         </div>

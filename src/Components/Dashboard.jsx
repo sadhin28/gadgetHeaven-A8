@@ -10,7 +10,6 @@ const Dashboard = () => {
     
    const [addGadgets,setaddcoffee]=useState([])
    
-
    useEffect(()=>{
      const storedCoffee = getStoredReadList();
      const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
@@ -25,11 +24,18 @@ const Dashboard = () => {
 
      }
     return (
-        <div className="grid gap-5 mt-5">
+        <div>
+           <div>
+              {
+                addGadgets.length
+              }
+           </div>
+           <div className="grid gap-5 mt-5">
            
             {
               addGadgets.map(data=><DashboardCard DeleteCard={DeleteCard}  key={data.id} data={data} ></DashboardCard>)
             }
+        </div>
         </div>
     );
 };

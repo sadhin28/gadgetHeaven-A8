@@ -1,18 +1,23 @@
-import {  NavLink } from "react-router-dom";
+import {  NavLink, useLoaderData } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getStoredReadList } from "../tuilites";
 
 
 
 
-const Navbar = () => {
-    const [count, setCount] = useState(0);
 
-    function handleClick() {
-        setCount(count + 1);
-    }
+const Navbar = ({loaddata}) => {
+     
+   const[addcar,setaddcard]=useState([])
+   useEffect(()=>{
+     const storecard=getStoredReadList();
+     const storecardint=storecard.map(id=>parseInt(id));
+     const cardlist=loaddata.filter(c=>storecardint.includes(c.id))
+     setaddcard(cardlist)
+   },[])
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
@@ -45,7 +50,9 @@ const Navbar = () => {
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
                          <div className="relative text-center   left-13 bottom-4">
-                                {count}
+                               {
+                                  addcar.length
+                               }
                          </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />
