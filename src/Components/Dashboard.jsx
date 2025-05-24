@@ -25,7 +25,7 @@ const Dashboard = () => {
      }
     return (
         <div>
-           <div>
+           <div className="">
               {
                 addGadgets.length
               }
