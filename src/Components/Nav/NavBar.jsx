@@ -9,14 +9,17 @@ import { getStoredReadList } from "../tuilites";
 
 
 
-const Navbar = ({loaddata}) => {
-     
-   const[addcar,setaddcard]=useState([])
+const Navbar = () => {
+       const allgadgets = useLoaderData();
+    
+    
+   const [addGadgets,setaddcoffee]=useState([])
+   
    useEffect(()=>{
-     const storecard=getStoredReadList();
-     const storecardint=storecard.map(id=>parseInt(id));
-     const cardlist=loaddata.filter(c=>storecardint.includes(c.id))
-     setaddcard(cardlist)
+     const storedCoffee = getStoredReadList();
+     const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
+     const coffeelist = allgadgets.filter(c=>storedCoffeeint.includes(c.id))
+     setaddcoffee(coffeelist)
    },[])
     const links =<>
          <NavLink to="/">Home</NavLink>
@@ -49,10 +52,8 @@ const Navbar = ({loaddata}) => {
             </div>
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
-                         <div className="relative text-center   left-13 bottom-4">
-                               {
-                                  addcar.length
-                               }
+                         <div className="relative text-center   left-13 bottom-5">
+                               {addGadgets.length}
                          </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />
