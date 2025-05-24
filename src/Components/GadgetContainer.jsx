@@ -6,7 +6,7 @@ const GadgetContainer = () => {
      const gadets = useLoaderData();
      
      const  gadegetData = gadets.filter(data=>data.category.includes(obj.category))
-     console.log(gadegetData)
+     
     return (
         <div className="grid justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5">
             {

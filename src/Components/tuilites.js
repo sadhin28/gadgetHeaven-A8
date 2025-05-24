@@ -11,23 +11,23 @@ const getStoredReadList =()=>{
 }   
 
 const addToStoredReadList=(id)=>{
-    console.log(id)
+ 
     const storedList = getStoredReadList();
     if(storedList.includes(id)){
 
-        toast.error(`This Coffee alrady exists in the Dashboard`)
+        toast.error(`This Gadget alrady exists in the Dashboard`)
     }
     else{
         storedList.push(id);
         const storedListstr = JSON.stringify(storedList);
         localStorage.setItem('gadget-list',storedListstr)
-        toast.success('Add To card The Coffee')
+        toast.success('This Gadget is added the dashboard List')
     }
 }
 
 const saveCartToLs = cart =>{
     const cartStringyfy = JSON.stringify(cart);
-    localStorage.setItem('coffee-list',cartStringyfy)
+    localStorage.setItem('gadget-list',cartStringyfy)
 }
 
 const removeFromLs =id=>{
