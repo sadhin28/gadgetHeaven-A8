@@ -1,35 +1,41 @@
-import { toast } from "react-toastify";
-
-//getdataFromLocalStorage
-const getStoredGadgetList =()=>{
-    const storedcardlist = localStorage.setItem('gadget-list')
-    if(storedcardlist){
-        const storedList = JSON.parse(storedcardlist);
+import {  toast } from 'react-toastify';
+const getStoredReadList =()=>{
+    const storedListr=localStorage.getItem('gadget-list')
+    if(storedListr){
+        const storedList = JSON.parse(storedListr);
         return storedList;
-    }else{
+    }
+    else{
         return [];
     }
-}
+}   
 
-const addtoStoredGadgetList =(id)=>{
-      const storedList=getStoredGadgetList();
-      if(storedList.includes(id)){
-          toast.error("This Product Is exist in the Dashboard")
-      }else{
+const addToStoredReadList=(id)=>{
+    console.log(id)
+    const storedList = getStoredReadList();
+    if(storedList.includes(id)){
+
+        toast.error(`This Coffee alrady exists in the Dashboard`)
+    }
+    else{
         storedList.push(id);
-        const storedLists=JSON.stringify(storedList);
-        localStorage.setItem('gadget-list',storedLists)
-      }
+        const storedListstr = JSON.stringify(storedList);
+        localStorage.setItem('gadget-list',storedListstr)
+        toast.success('Add To card The Coffee')
+    }
 }
 
 const saveCartToLs = cart =>{
     const cartStringyfy = JSON.stringify(cart);
-    localStorage.setItem('gadget-list',cartStringyfy)
+    localStorage.setItem('coffee-list',cartStringyfy)
 }
 
-const removeFromLs= id =>{
-    const card = getStoredGadgetList();
-    const remaining = card.filter(idx=> idx !== id)
-    saveCartToLs (remaining)
+const removeFromLs =id=>{
+  const cart = getStoredReadList();
+  //removing every id
+  const remaining = cart.filter(idx => idx !== id);
+   saveCartToLs(remaining);
 }
-export {getStoredGadgetList,addtoStoredGadgetList,removeFromLs}
+
+
+export {addToStoredReadList,getStoredReadList,removeFromLs}
