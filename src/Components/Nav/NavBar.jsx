@@ -2,25 +2,9 @@ import {  NavLink, useLoaderData } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
-import { useEffect, useState } from "react";
-import { getStoredReadList } from "../tuilites";
-
-
-
-
 
 const Navbar = () => {
-       const allgadgets = useLoaderData();
-    
-    
-   const [addGadgets,setaddcoffee]=useState([])
-   
-   useEffect(()=>{
-     const storedCoffee = getStoredReadList();
-     const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
-     const coffeelist = allgadgets.filter(c=>storedCoffeeint.includes(c.id))
-     setaddcoffee(coffeelist)
-   },[])
+      
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
@@ -53,7 +37,7 @@ const Navbar = () => {
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
                          <div className="relative text-center   left-13 bottom-5">
-                               {addGadgets.length}
+                             
                          </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />

@@ -5,12 +5,10 @@ import { ToastContainer } from "react-toastify"
 
 
 function App() {
-   const loaddata=useLoaderData();
    
-
   return (
     <div className="w-11/12 mx-auto">
-        <Navbar loaddata={loaddata}></Navbar>
+        <Navbar></Navbar>
        <div className="min-h-[calc(100vh-100px)]">
           <Outlet></Outlet>
        </div>
