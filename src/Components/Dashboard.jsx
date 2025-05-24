@@ -17,10 +17,17 @@ const Dashboard = () => {
      const coffeelist = allgadgets.filter(c=>storedCoffeeint.includes(c.id))
      setaddcoffee(coffeelist)
    },[])
+
+   const DeleteCard=(id)=>{
+       const removingCard = addGadgets.filter(coffeeCard=>coffeeCard.id !== id)
+       setaddcoffee(removingCard)
+       removeFromLs(id);
+
+     }
     return (
-        <div>
+        <div className="grid gap-5 mt-5">
             {
-              addGadgets.map(data=><DashboardCard key={data.id} data={data} ></DashboardCard>)
+              addGadgets.map(data=><DashboardCard DeleteCard={DeleteCard} key={data.id} data={data} ></DashboardCard>)
             }
         </div>
     );

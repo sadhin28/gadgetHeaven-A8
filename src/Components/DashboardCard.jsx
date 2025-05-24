@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 
-const DashboardCard = ({data}) => {
+const DashboardCard = ({data,DeleteCard}) => {
       const { name, image, id, price, rating } = data
+      
     return (
         <div>
            <div>
-      <div className="card  border-amber-700 bg-base-100 w-70 shadow-sm">
+      <div className="card   border-3 bg-base-100  w-full shadow-xl shadow-amber-500-100">
         <figure>
           <img
-            className='h-40 w-full'
+            className='h-50 w-50 '
             src={image}
             alt="Shoes" />
         </figure>
@@ -20,8 +21,8 @@ const DashboardCard = ({data}) => {
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Rating {rating}</div>
-           
-             <Link   className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+              <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
+              <Link onClick={()=>DeleteCard(id)}  className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Delete</Link>
           </div>
         </div>
       </div>

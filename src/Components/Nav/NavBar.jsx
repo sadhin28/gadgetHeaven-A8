@@ -1,11 +1,23 @@
-import { Link,  NavLink } from "react-router-dom";
+import { Link,  NavLink, useLoaderData } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 
 import '../Nav/Navbar.css'
+import { useEffect, useState } from "react";
+import { getStoredReadList } from "../tuilites";
+
 
 const Navbar = () => {
 
+   const [addGadgets,setaddcoffee]=useState([])
+    
+   useEffect(()=>{
+       const storedCoffee = getStoredReadList();
+     
+     setaddcoffee(storedCoffee)
+     
+   },[])
+    
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
@@ -42,6 +54,9 @@ const Navbar = () => {
                         </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <AiOutlineHeart />
+                            <div>
+                              {addGadgets.length}
+                            </div>
                         </div>
                 </div>
           

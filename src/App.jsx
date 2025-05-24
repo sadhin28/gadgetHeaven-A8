@@ -4,6 +4,7 @@ import Footer from "./Components/Footer"
 import { ToastContainer } from "react-toastify"
 
 function App() {
+  
   return (
     <div className="w-11/12 mx-auto">
         <Navbar></Navbar>
