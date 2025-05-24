@@ -2,11 +2,13 @@ import {  NavLink } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
+import { incremen } from "../tuilites";
 
 
 
 const Navbar = () => {
      
+     const i=incremen()
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
@@ -44,7 +46,7 @@ const Navbar = () => {
                         <div className="p-2 bg-amber-50 rounded-full">
                             <AiOutlineHeart />
                             <div id="increment">
-                               
+                                  {i}
                             </div>
                         </div>
                 </div>

@@ -39,7 +39,8 @@ const removeFromLs =id=>{
 }
 
 const incremen =id=>{
-      alert(id)
+     const data =id;
+     return data;
 }
 
 
