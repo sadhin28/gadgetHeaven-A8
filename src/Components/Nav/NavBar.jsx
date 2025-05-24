@@ -1,4 +1,4 @@
-import { Link,  NavLink, useLoaderData } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
@@ -43,8 +43,8 @@ const Navbar = () => {
                         </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <AiOutlineHeart />
-                            <div>
-                              {}
+                            <div id="increment">
+                               
                             </div>
                         </div>
                 </div>

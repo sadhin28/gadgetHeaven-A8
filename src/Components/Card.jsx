@@ -23,7 +23,8 @@ const Card = ({ product}) => {
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Rating {rating}</div>
             <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
-             <Link onClick={()=>addToStoredReadList(id)}  className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+             <Link onClick={()=>addToStoredReadList(id,100)}  className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+             
           </div>
         </div>
       </div>
