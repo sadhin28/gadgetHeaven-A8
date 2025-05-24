@@ -3,7 +3,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({data}) => {
       
     const links =<>
          <NavLink to="/">Home</NavLink>
@@ -37,7 +37,7 @@ const Navbar = () => {
            
                 <div className="navbar-end  text-black flex gap-3 text-2xl justify-items-center ">
                          <div className="relative text-center   left-13 bottom-5">
-                             
+                             {data.length}
                          </div>
                         <div className="p-2 bg-amber-50 rounded-full">
                             <HiOutlineShoppingCart />

@@ -9,7 +9,7 @@ const Dashboard = () => {
     
     
    const [addGadgets,setaddcoffee]=useState([])
-   
+   console.log(addGadgets.length)
    useEffect(()=>{
      const storedCoffee = getStoredReadList();
      const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
