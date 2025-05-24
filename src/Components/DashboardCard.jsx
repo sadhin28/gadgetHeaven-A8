@@ -7,12 +7,12 @@ const DashboardCard = ({data,DeleteCard}) => {
     return (
         <div>
            <div>
-      <div className="card   border-3 bg-base-100  w-full shadow-xl shadow-amber-500-100">
+      <div className="card    bg-base-100  w-full shadow-xl shadow-amber-500-100">
         <figure>
           <img
             className='h-50 w-50 '
             src={image}
-            alt="Shoes" />
+            alt={name} />
         </figure>
         <div className="card-body">
           <h2 className="card-title">
