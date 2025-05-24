@@ -26,7 +26,7 @@ const Dashboard = () => {
      }
     return (
         <div>
-           <div className="text-2xl text-center bg-amber-50 sticky top-20 z-40 mb-10 ">
+           <div className="text-2xl text-center text-amber-50 bg-[#9538E2] p-2 sticky top-20 z-40 mb-10 ">
               {
                 `Total Price for ${addGadgets.length} Products (${totalprice})`
               }
