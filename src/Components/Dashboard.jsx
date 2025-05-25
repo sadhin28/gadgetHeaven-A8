@@ -25,6 +25,19 @@ const Dashboard = () => {
 
   }
   
+  const handelModal=()=>{
+     
+      const emtydata =localStorage.getItem('gadget-list')
+      const array = [emtydata]
+       localStorage.clear();
+      setaddcoffee(array)
+     
+      document.getElementById('my_modal_3').showModal()
+      
+      
+  }
+  
+
   return (
     <div>
       
@@ -43,7 +56,7 @@ const Dashboard = () => {
            </div>
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
           <div className="mx-auto sticky top-50 w-30">
-             <button className="btn   text-amber-50 bg-[#9538E2] z-30 w-40 " onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
+             <button  id="bye-now" className="btn   text-amber-50 bg-[#9538E2] z-30 w-40 " onClick={handelModal} >Bye Now</button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
               <form method="dialog">
