@@ -38,41 +38,17 @@ const CardList = () => {
         Status: 'available'
     })
 
+
     //handel button 
     
     return (
 
         <div>
           
-            <div className="flex  mt-2 gap-5 justify-between">
-                <div className=" p-2 text-2xl  mb-10">
-                    {
-                        isactive.available ? "Cart" : "WishList"
-                    }
-                </div>
-                <div className="flex gap-5">
-                    <div className="  p-2 text-2xl  mb-10 ">
-                        {
-                            `Total Cost ${totalprice}`
-                        }
-                    </div>
-                    {/* You can open the modal using document.getElementById('ID').showModal() method */}
-                    <div className="">
-                        <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelModal} >Purchase</button>
-                        <dialog id="my_modal_3" className="modal">
-                            <div className="modal-box">
-                                <form method="dialog">
-                                    {/* if there is a button in form, it will close the modal */}
-                                    <button className="btn  btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                </form>
-                                <h3 className="font-bold text-center text-lg">Order Conform</h3>
-                                <p className="py-4">Press ESC key or click on ✕ button to close</p>
-                            </div>
-                        </dialog>
-                    </div>
-                </div>
-
-            </div>
+           <div>
+           
+        </div>
+        
             <div className="grid gap-5 mt-20">
 
                 {

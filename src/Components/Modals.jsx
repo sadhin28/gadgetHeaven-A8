@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Wishes = () => {
+const Modals = () => {
     return (
         <div>
-             <h1>hi</h1>
+            
         </div>
     );
 };
 
-export default Wishes;
+export default Modals;
