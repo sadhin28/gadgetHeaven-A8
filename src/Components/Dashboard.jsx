@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getStoredReadList, removeFromLs } from "./tuilites";
 import DashboardCard from "./DashboardCard";
 
@@ -24,13 +24,14 @@ const Dashboard = () => {
     removeFromLs(id);
 
   }
-  
+  const [data,setdata]=useState([])
   const handelModal=()=>{
-     
+      localStorage.clear();
+      
       const emtydata =localStorage.getItem('gadget-list')
-      const array = [emtydata]
-       localStorage.clear();
-      setaddcoffee(array)
+      setdata(emtydata)
+      setaddcoffee(data)
+      
      
       document.getElementById('my_modal_3').showModal()
       
@@ -40,22 +41,22 @@ const Dashboard = () => {
 
   return (
     <div>
-      
-      <div className="flex   justify-between">
-        <div className="grid gap-5 mt-20 w-7/12">
-
-          {
-            addGadgets.map(data => <DashboardCard DeleteCard={DeleteCard} key={data.id} data={data} ></DashboardCard>)
-          }
-        </div>
-        <div className="">
-            <div className="text-2xl text-center   p-2 sticky top-20 z-40 mb-10 ">
+      <div className="bg-[#9538E2] py-2 text-amber-50 sticky top-20 z-30">
+          <h1 className="text-center text-2xl font-bold ">Dashboard</h1>
+          <p className="text-center">Explore the latest gadgets that will take your <br /> experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+          <div className="flex py-5 justify-center gap-10 items-center" >
+             <Link className="p-2 w-20 text-center border rounded-xl">Cart</Link>
+             <Link className="p-2 w-20 text-center border rounded-xl">Wishes</Link>
+          </div>
+      </div>
+      <div className="flex justify-between">
+            <div className="  p-2  mb-10 ">
                {
                  `Total Price for ${addGadgets.length} Products (${totalprice})`
                }
            </div>
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
-          <div className="mx-auto sticky top-50 w-30">
+          <div className="mx-auto sticky top-50 ">
              <button  id="bye-now" className="btn   text-amber-50 bg-[#9538E2] z-30 w-40 " onClick={handelModal} >Bye Now</button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
@@ -69,6 +70,15 @@ const Dashboard = () => {
           </dialog>
           </div>
         </div>
+      
+      <div className="">
+        <div className="grid gap-5 mt-20">
+
+          {
+            addGadgets.map(data => <DashboardCard DeleteCard={DeleteCard} key={data.id} data={data} ></DashboardCard>)
+          }
+        </div>
+        
       </div>
     </div>
   );

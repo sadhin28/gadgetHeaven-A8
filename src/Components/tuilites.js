@@ -23,6 +23,7 @@ const addToStoredReadList=(id)=>{
         const storedListstr = JSON.stringify(storedList);
         localStorage.setItem('gadget-list',storedListstr)
         toast.success('This Gadget is added the dashboard List')
+        handelincrement()
     }
 }
 
@@ -39,7 +40,12 @@ const removeFromLs =id=>{
 }
 
   
-
+const handelincrement =()=>{
+        counts()
+}
+const  counts =(count,setcount)=>{
+     setcount
+}
 
 
 
