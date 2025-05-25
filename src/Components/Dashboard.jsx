@@ -42,7 +42,7 @@ const Dashboard = () => {
                }
            </div>
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
-          <div className="mx-auto sticky top-40 w-30">
+          <div className="mx-auto sticky top-50 w-30">
              <button className="btn   text-amber-50 bg-[#9538E2] z-30 w-40 " onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
