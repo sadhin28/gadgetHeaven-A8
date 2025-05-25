@@ -1,32 +1,7 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink, Outlet, useLoaderData } from "react-router-dom";
-import { getStoredReadList, removeFromLs } from "./tuilites";
-import DashboardCard from "./DashboardCard";
-import Modal from "./Modals";
-import Modals from "./Modals";
+import { useState } from "react";
+import { NavLink, Outlet,  } from "react-router-dom";
 
 const Dashboard = () => {
-
-
-  const allgadgets = useLoaderData();
-
-
-    const [addGadgets, setaddcoffee] = useState([])
-    const totalprice = addGadgets.reduce((sum, product) => sum + product.price, 0);
-
-    useEffect(() => {
-        const storedCoffee = getStoredReadList();
-        const storedCoffeeint = storedCoffee.map(id => parseInt(id));
-        const coffeelist = allgadgets.filter(c => storedCoffeeint.includes(c.id))
-        setaddcoffee(coffeelist)
-    }, [])
-
-    const DeleteCard = (id) => {
-        const removingCard = addGadgets.filter(coffeeCard => coffeeCard.id !== id)
-        setaddcoffee(removingCard)
-        removeFromLs(id);
-
-    }
 
       const [isactive, setisactive] = useState({
         available: true,
@@ -50,7 +25,7 @@ const Dashboard = () => {
   return (
       
       <div>
-          <div className="bg-[#9538E2] py-2 text-amber-50 sticky top-20 z-30">
+          <div className="bg-[#9538E2] py-2 text-amber-50 ">
                 <h1 className="text-center text-2xl font-bold ">Dashboard</h1>
                 <p className="text-center">Explore the latest gadgets that will take your <br /> experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <div className="flex  py-5 justify-center gap-10 items-center" >

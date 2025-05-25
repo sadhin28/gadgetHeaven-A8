@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLoaderData } from "react-router-dom";
 import { getStoredReadList, removeFromLs } from "./tuilites";
 import DashboardCard from "./DashboardCard";
+import { toast } from "react-toastify";
 
 const CardList = () => {
     const allgadgets = useLoaderData();
@@ -28,13 +29,20 @@ const CardList = () => {
     const [data, setdata] = useState([])
     
     const handelModal = () => {
-
-        localStorage.clear();
+            const emtydata = localStorage.getItem('gadget-list')
+    
+        if(emtydata === null){
+           toast.error("Place Add to card then Purchase")
+        }
+        else{
+                localStorage.clear();
         const emtydata = localStorage.getItem('gadget-list')
+        
         setdata(emtydata)
         setaddcoffee(data)
       
         document.getElementById('my_modal_3').showModal()
+        }
     }
    
     
@@ -42,7 +50,7 @@ const CardList = () => {
 
         <div>
           
-           <div className="sticky z-50 top-70 md:top-64">
+           <div className="sticky z-50 top-20 md:top-20">
              <div className="">
             
                 <div className="flex bg-base-100 p-4  mt-2 gap-5 justify-between">
