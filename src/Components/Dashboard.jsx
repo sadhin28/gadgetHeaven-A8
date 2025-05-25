@@ -76,7 +76,7 @@ const Dashboard = () => {
                     }
             </div>
                 <div className="flex gap-5">
-                    <div className="  p-2 text-2xl  mb-10 ">
+                    <div className="  p-2 md:text-2xl font-bold  mb-10 ">
                         {
                             `Total Cost ${totalprice}`
                         }
