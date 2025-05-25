@@ -25,13 +25,13 @@ const Dashboard = () => {
 
      }
     return (
-        <div>
+        <div >
            <div className="text-2xl text-center text-amber-50 bg-[#9538E2] p-2 sticky top-20 z-40 mb-10 ">
               {
                 `Total Price for ${addGadgets.length} Products (${totalprice})`
               }
            </div>
-           <div className="grid gap-5 mt-5">
+           <div className="grid gap-5 mt-20 w-7/12">
            
             {
               addGadgets.map(data=><DashboardCard DeleteCard={DeleteCard}  key={data.id} data={data} ></DashboardCard>)
