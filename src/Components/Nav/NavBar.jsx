@@ -11,7 +11,7 @@ const Navbar = ({data}) => {
          <NavLink to="/Dashboard">Dashboard</NavLink>
     </>
     return (
-        <div className="sticky  rounded-t-2xl shadow-sm h-20 top-0 z-20 navbar text-white bg-[#9538E2] transform-border scale-3d  ">
+        <div className="sticky  rounded-t-2xl shadow-sm h-20 top-0 z-20 navbar text-white bg-[#9538E2] duration-700  transform-border scale-3d  ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,7 +19,7 @@ const Navbar = ({data}) => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-17 w-52 p-2 shadow">
+                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-18 w-52 p-2 shadow">
                         {
                             links
                         }

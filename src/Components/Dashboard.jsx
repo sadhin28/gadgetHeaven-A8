@@ -4,41 +4,58 @@ import { getStoredReadList, removeFromLs } from "./tuilites";
 import DashboardCard from "./DashboardCard";
 
 const Dashboard = () => {
-    
-    const allgadgets = useLoaderData();
-    
-    
-   const [addGadgets,setaddcoffee]=useState([])
-   const totalprice = addGadgets.reduce((sum,product)=>sum+ product.price,0);
-   
-   useEffect(()=>{
-     const storedCoffee = getStoredReadList();
-     const storedCoffeeint = storedCoffee.map(id=>parseInt(id));
-     const coffeelist = allgadgets.filter(c=>storedCoffeeint.includes(c.id))
-     setaddcoffee(coffeelist)
-   },[])
 
-   const DeleteCard=(id)=>{
-       const removingCard = addGadgets.filter(coffeeCard=>coffeeCard.id !== id)
-       setaddcoffee(removingCard)
-       removeFromLs(id);
+  const allgadgets = useLoaderData();
 
-     }
-    return (
-        <div >
-           <div className="text-2xl text-center text-amber-50 bg-[#9538E2] p-2 sticky top-20 z-40 mb-10 ">
-              {
-                `Total Price for ${addGadgets.length} Products (${totalprice})`
-              }
-           </div>
-           <div className="grid gap-5 mt-20 w-7/12">
-           
-            {
-              addGadgets.map(data=><DashboardCard DeleteCard={DeleteCard}  key={data.id} data={data} ></DashboardCard>)
-            }
+
+  const [addGadgets, setaddcoffee] = useState([])
+  const totalprice = addGadgets.reduce((sum, product) => sum + product.price, 0);
+
+  useEffect(() => {
+    const storedCoffee = getStoredReadList();
+    const storedCoffeeint = storedCoffee.map(id => parseInt(id));
+    const coffeelist = allgadgets.filter(c => storedCoffeeint.includes(c.id))
+    setaddcoffee(coffeelist)
+  }, [])
+
+  const DeleteCard = (id) => {
+    const removingCard = addGadgets.filter(coffeeCard => coffeeCard.id !== id)
+    setaddcoffee(removingCard)
+    removeFromLs(id);
+
+  }
+  
+  return (
+    <div >
+      <div className="text-2xl text-center text-amber-50 bg-[#9538E2] p-2 sticky top-20 z-40 mb-10 ">
+        {
+          `Total Price for ${addGadgets.length} Products (${totalprice})`
+        }
+      </div>
+      <div className="flex   justify-between">
+        <div className="grid gap-5 mt-20 w-7/12">
+
+          {
+            addGadgets.map(data => <DashboardCard DeleteCard={DeleteCard} key={data.id} data={data} ></DashboardCard>)
+          }
         </div>
+        <div className="">
+          {/* You can open the modal using document.getElementById('ID').showModal() method */}
+          <button className="btn sticky top-40 z-30 w-full" onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
+          <dialog id="my_modal_3" className="modal">
+            <div className="modal-box">
+              <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+              </form>
+              <h3 className="font-bold text-center text-lg">Order Conform</h3>
+              <p className="py-4">Press ESC key or click on ✕ button to close</p>
+            </div>
+          </dialog>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;
