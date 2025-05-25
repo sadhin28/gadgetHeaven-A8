@@ -26,7 +26,7 @@ function App() {
           <Outlet></Outlet>
        </div>
        <Footer></Footer>
-       <ToastContainer position="bottom-right"/>
+       <ToastContainer position="top-center mt-20"/>
     </div>
   )
 }

@@ -36,6 +36,11 @@ const Dashboard = () => {
           }
         </div>
         <div className="">
+          <div className="text-2xl text-center   p-2 sticky top-20 z-40 mb-10 ">
+        {
+          `Total Price for ${addGadgets.length} Products (${totalprice})`
+        }
+      </div>
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
           <button className="btn sticky top-40 text-amber-50 bg-[#9538E2] z-30 w-full" onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
           <dialog id="my_modal_3" className="modal">
