@@ -9,10 +9,10 @@ const Card = ({ product}) => {
  
   return (
     <div>
-      <div className="card  border-amber-700 bg-base-100 w-70 shadow-sm">
+      <div className="card  border-amber-700 bg-base-100 w-60 shadow-sm">
         <figure>
           <img
-            className='h-40 w-full'
+            className='h-45 w-full'
             src={image}
             alt="Shoes" />
         </figure>
@@ -23,9 +23,11 @@ const Card = ({ product}) => {
           </h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div className="card-actions justify-end">
-            <div className="badge badge-outline">Rating {rating}</div>
-            <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
-            <Link onClick={()=>addToStoredReadList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+            <div className="badge  badge-outline">Rating {rating}</div> 
+           <div className='flex gap-4'>
+               <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
+               <Link onClick={()=>addToStoredReadList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+           </div>
              
           </div>
         </div>

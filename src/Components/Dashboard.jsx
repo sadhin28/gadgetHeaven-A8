@@ -26,7 +26,7 @@ const Dashboard = () => {
   }
   
   return (
-    <div >
+    <div>
       
       <div className="flex   justify-between">
         <div className="grid gap-5 mt-20 w-7/12">
@@ -36,13 +36,14 @@ const Dashboard = () => {
           }
         </div>
         <div className="">
-          <div className="text-2xl text-center   p-2 sticky top-20 z-40 mb-10 ">
-        {
-          `Total Price for ${addGadgets.length} Products (${totalprice})`
-        }
-      </div>
+            <div className="text-2xl text-center   p-2 sticky top-20 z-40 mb-10 ">
+               {
+                 `Total Price for ${addGadgets.length} Products (${totalprice})`
+               }
+           </div>
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
-          <button className="btn sticky top-40 text-amber-50 bg-[#9538E2] z-30 w-full" onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
+          <div className="mx-auto sticky top-40 w-30">
+             <button className="btn   text-amber-50 bg-[#9538E2] z-30 w-40 " onClick={() => document.getElementById('my_modal_3').showModal()}>Bye Now</button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
               <form method="dialog">
@@ -53,6 +54,7 @@ const Dashboard = () => {
               <p className="py-4">Press ESC key or click on ✕ button to close</p>
             </div>
           </dialog>
+          </div>
         </div>
       </div>
     </div>
