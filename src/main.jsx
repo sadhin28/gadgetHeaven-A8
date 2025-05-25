@@ -13,6 +13,8 @@ import Statistics from './Components/Statistics.jsx';
 import Dashboard from './Components/Dashboard.jsx';
 import GadgetContainer from './Components/GadgetContainer.jsx';
 import Detail from './Components/Detail.jsx';
+import CardList from './Components/CardList.jsx';
+import Wishes from './Components/Wishes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,7 +48,18 @@ const router = createBrowserRouter([
       {
         path:'Dashboard',
         element:<Dashboard></Dashboard>,
-         loader:()=>fetch('../allproducts.json')
+         loader:()=>fetch('../allproducts.json'),
+         children:[
+          {
+            path:'card',
+            element:<CardList></CardList>,
+               loader:()=>fetch('../allproducts.json'),
+          },{
+            path:'wishes',
+            element:<Wishes></Wishes>,
+              loader:()=>fetch('../allproducts.json'),
+          }
+         ]
       },
       
     ]
