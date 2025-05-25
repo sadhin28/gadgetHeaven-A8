@@ -19,7 +19,7 @@ const Navbar = ({data}) => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-18 w-52 p-2 shadow">
+                        className="text-xl  gird gap-3 menu duration-1000 menu-sm dropdown-content bg-[#9538E2]  z-1 mt-6 w-52 p-2 shadow">
                         {
                             links
                         }
