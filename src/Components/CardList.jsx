@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import  modalimg from '../assets/Group copy.png'
 const CardList = () => {
     const allgadgets = useLoaderData();
-
+   
 
     const [addGadgets, setaddcoffee] = useState([])
     const totalprice = addGadgets.reduce((sum, product) => sum + product.price, 0);
@@ -51,8 +51,12 @@ const CardList = () => {
          
     }
 
-    const handleSorting=()=>{
-
+    const handleSorting=(prices)=>{
+      
+        if(prices === 'price'){
+            const sortedGadgets =[...addGadgets].sort((a,b)=>b.price - a.price);
+            setaddcoffee(sortedGadgets)
+        }
     }
     return (
 
@@ -69,8 +73,8 @@ const CardList = () => {
                         </div>
                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
                         <div className="">
-                            <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handleSorting}  >Sort By Price</button>
-                            <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelShowmOdal}  >Purchas</button>
+                            <button id="bye-now" className="btn text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={()=>handleSorting('price')}  >Sort By Price</button>
+                            <button id="bye-now" className="btn  text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelShowmOdal}  >Purchas</button>
                             <dialog id="my_modal_3" className={`modal `}>
                                 <div className="modal-box">
                                     <form method="dialog">
