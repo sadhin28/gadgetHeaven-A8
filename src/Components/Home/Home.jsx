@@ -1,6 +1,6 @@
 import './Home.css'
 import image from '../../assets/banner.jpg'
-import { NavLink, Outlet, useLoaderData } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLoaderData } from 'react-router-dom';
 const Home = () => {
     const category= useLoaderData()
     return (
@@ -12,7 +12,7 @@ const Home = () => {
                   <p className=' text-2xl relative  md:top-20 top-15'>Shop the latest laptops, phones, smartwatches, and accessories  all in one place.</p>
                </div>
                <div className='relative md:top-30 top-25'>
-                  <button className='btn rounded-2xl text-[#9538E2]'>Shop Now</button>
+                 <Link  to='gadeget/All'> <button  className='btn rounded-2xl text-[#9538E2]'>Shop Now</button></Link>
                </div>
            </div>
             <div id='banner' className=' w-9/12 mx-auto md:h-120 h-50  relative bottom-35 md:bottom-70'>
