@@ -51,6 +51,9 @@ const CardList = () => {
          
     }
 
+    const handleSorting=()=>{
+        
+    }
     return (
 
         <div>
@@ -66,6 +69,7 @@ const CardList = () => {
                         </div>
                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
                         <div className="">
+                            <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handleSorting}  >Purchase</button>
                             <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelShowmOdal}  >Purchase</button>
                             <dialog id="my_modal_3" className={`modal `}>
                                 <div className="modal-box">

@@ -15,10 +15,13 @@ import GadgetContainer from './Components/GadgetContainer.jsx';
 import Detail from './Components/Detail.jsx';
 import CardList from './Components/CardList.jsx';
 import Wishes from './Components/Wishes.jsx';
+import ErrorPage from './Components/ErrorPage.jsx';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
+    
     element:<App></App>,
     loader:()=>fetch('../allproducts.json'),
     children:[
@@ -64,6 +67,10 @@ const router = createBrowserRouter([
       
     ]
   },
+  {
+    path:'*',
+    element:<ErrorPage></ErrorPage>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
