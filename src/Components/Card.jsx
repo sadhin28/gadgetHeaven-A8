@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { addToStoredReadList } from './tuilites';
+import { addToStoredReadList, addToStoredwishesList } from './tuilites';
 
 
 const Card = ({ product}) => {
@@ -27,6 +27,8 @@ const Card = ({ product}) => {
            <div className='flex gap-4'>
                <Link to={`/details/${id}`}><div className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Details</div></Link>
                <Link onClick={()=>addToStoredReadList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Add</Link>
+               <Link onClick={()=>addToStoredwishesList(id)} className="badge hover:bg-blue-600 hover:text-white badge-outline btn">Wish</Link>
+           
            </div>
              
           </div>

@@ -25,7 +25,7 @@ const Detail = () => {
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Rating {reting}</div>
-           
+            
         </div>
       </div>
     </div>

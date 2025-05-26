@@ -64,13 +64,13 @@ const addToStoredwishesList=(id)=>{
     const storedList =  getStoredwhishesList();
     if(storedList.includes(id)){
 
-        toast.error(`This Book alrady exists in the wishList`)
+        toast.error(`This Gadeget alrady exists in the wishList`)
     }
     else{
         storedList.push(id);
         const storedListstr = JSON.stringify(storedList);
         localStorage.setItem('whish-list',storedListstr)
-        toast.success('Wishes The Book')
+        toast.success('Wishes The Gadgets')
     }
 }
 
