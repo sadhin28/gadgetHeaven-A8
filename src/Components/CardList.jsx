@@ -68,8 +68,8 @@ const CardList = () => {
                                         {/* if there is a button in form, it will close the modal */}
                                         <button className="btn  btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
-                                    <h3 className="font-bold text-center text-lg">Order Conform</h3>
-                                    <p className="py-4">Press ESC key or click on ✕ button to close</p>
+                                    <h3 className="font-bold text-center text-lg">Payment Successfully</h3>
+                                    <p className="py-4">Thanks for purchasing.${totalprice}</p>
                                 </div>
                             </dialog>
                         </div>
