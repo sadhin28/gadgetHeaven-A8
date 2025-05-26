@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getStoredwhishesList, removeFromLs } from './tuilites';
+import WishCard from './WishCard';
 
 const Wishes = () => {
     const allgadgets = useLoaderData();
@@ -27,7 +28,7 @@ const Wishes = () => {
             <div className="grid gap-5 mt-20">
 
                 {
-                    addGadgets.map(data => )
+                    addGadgets.map(data => <WishCard data={data} key={data.id} DeleteCard={DeleteCard}></WishCard>)
                 }
             </div>
         </div>

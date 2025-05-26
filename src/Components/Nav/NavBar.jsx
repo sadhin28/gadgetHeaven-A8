@@ -2,9 +2,11 @@ import {  NavLink } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
 import '../Nav/Navbar.css'
+import { getStoredwhishesList } from "../tuilites";
 
 const Navbar = ({data}) => {
-      
+    const wishdata=getStoredwhishesList()
+    console.log(wishdata)
     const links =<>
          <NavLink to="/">Home</NavLink>
          <NavLink to="/Statistics">Statistics</NavLink>
