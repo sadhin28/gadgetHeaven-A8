@@ -35,13 +35,15 @@ const CardList = () => {
             toast.error("Place Add to card then Purchase")
         }
         else {
+          
             localStorage.clear();
+             
             const emtydata = localStorage.getItem('gadget-list')
-
+            document.getElementById('my_modal_3').showModal()
             setdata(emtydata)
             setaddcoffee(data)
-
-            document.getElementById('my_modal_3').showModal()
+            
+           
         }
     }
 
@@ -66,10 +68,13 @@ const CardList = () => {
                                 <div className="modal-box">
                                     <form method="dialog">
                                         {/* if there is a button in form, it will close the modal */}
-                                        <button className="btn  btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                        <button  className="btn  btn-sm btn-circle  btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
                                     <h3 className="font-bold text-center text-lg">Payment Successfully</h3>
-                                    <p className="py-4">Thanks for purchasing.${totalprice}</p>
+                                    <p className="py-2 text-center">Thanks for purchasing. </p>
+                                    <p className="text-center py-2">{
+                                         `Total Price : ${totalprice}`
+                                        }</p>
                                 </div>
                             </dialog>
                         </div>
