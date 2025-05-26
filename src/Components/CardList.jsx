@@ -73,8 +73,10 @@ const CardList = () => {
                         </div>
                         {/* You can open the modal using document.getElementById('ID').showModal() method */}
                         <div className="">
-                            <button id="bye-now" className="btn text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={()=>handleSorting('price')}  >Sort By Price</button>
-                            <button id="bye-now" className="btn text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelShowmOdal}  >Purchas</button>
+                            <div className="flex gap-2">
+                                <button id="bye-now" className="p-2 btn text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={()=>handleSorting('price')}  >Sort By Price</button>
+                            <button id="bye-now" className="p-2 btn text-sm rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelShowmOdal}  >Purchas</button>
+                            </div>
                             <dialog id="my_modal_3" className={`modal `}>
                                 <div className="modal-box">
                                     <form method="dialog">
