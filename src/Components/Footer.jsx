@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,36 +14,39 @@ const Footer = () => {
           </p>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
-        <div className='flex'>
+        <div className='grid grid-cols-2  md:grid-cols-3 gap-20 md:gap-60'>
           <ul>
-           <div className='grid gap-3 text-start'>
-               <h1 className='text-2xl'>Services</h1>
-            <li> <a href=""> Order Tracking</a></li>
-            <li><a href=""> Shipping & Delivery</a></li>
-            <li> <a href="">Product Support</a></li>
-            <li><a href="">Returns</a></li>
-           </div>
-            
+            <div className='grid gap-3 text-start'>
+              <li className='text-2xl'>Services</li>
+              <li> <a href=""> Order Tracking</a></li>
+              <li><a href=""> Shipping & Delivery</a></li>
+              <li> <a href="">Product Support</a></li>
+              <li><a href="">Returns</a></li>
+            </div>
+
           </ul>
           <ul>
-           <div className='grid gap-3 text-start'>
-               <h1 className='text-2xl'>Services</h1>
-            <li> <a href=""> Order Tracking</a></li>
-            <li><a href=""> Shipping & Delivery</a></li>
-            <li> <a href="">Product Support</a></li>
-            <li><a href="">Returns</a></li>
-           </div>
-            
+            <div className='grid gap-3 text-start'>
+              <li className='text-2xl'>Links</li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to="Statistics">Statistics</Link></li>
+              <li><Link to='Dashboard'>Dashboard</Link></li>
+
+            </div>
+
           </ul>
           <ul>
-           <div className='grid gap-3 text-start'>
-               <h1 className='text-2xl'>Services</h1>
-            <li> <a href=""> Order Tracking</a></li>
-            <li><a href=""> Shipping & Delivery</a></li>
-            <li> <a href="">Product Support</a></li>
-            <li><a href="">Returns</a></li>
-           </div>
-            
+
+
+
+            <div className='grid gap-3 text-start'>
+              <h1 className='text-2xl'>Legal</h1>
+              <li> <a href=""> Terms of Service</a></li>
+              <li><a href=""> Privacy Policy</a></li>
+              <li> <a href="">Cookie Policy</a></li>
+
+            </div>
+
           </ul>
         </div>
         <nav>

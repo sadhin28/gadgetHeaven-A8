@@ -1,4 +1,4 @@
-import './Home.css'
+
 import image from '../../assets/banner.jpg'
 import { Link, NavLink, Outlet, useLoaderData } from 'react-router-dom';
 const Home = () => {
