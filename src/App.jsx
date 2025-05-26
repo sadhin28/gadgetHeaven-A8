@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="w-11/12 mx-auto">
         <Navbar data={data}></Navbar>
-       <div className="min-h-[calc(100vh-100px)]">
+       <div className="min-h-[calc(100vh-20px)]">
           <Outlet></Outlet>
        </div>
        <Footer></Footer>
