@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, useLoaderData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
 import { getStoredReadList, removeFromLs } from "./tuilites";
 import DashboardCard from "./DashboardCard";
 import { toast } from "react-toastify";
