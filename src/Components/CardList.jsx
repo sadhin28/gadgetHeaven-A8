@@ -3,7 +3,7 @@ import { Link, NavLink, useLoaderData } from "react-router-dom";
 import { getStoredReadList, removeFromLs } from "./tuilites";
 import DashboardCard from "./DashboardCard";
 import { toast } from "react-toastify";
-
+import  modalimg from '../assets/Group copy.png'
 const CardList = () => {
     const allgadgets = useLoaderData();
 
@@ -77,6 +77,7 @@ const CardList = () => {
                                         {/* if there is a button in form, it will close the modal */}
                                         <button onClick={handelModal} className="btn  btn-sm btn-circle  btn-ghost absolute right-2 top-2">✕</button>
                                     </form>
+                                     <img className="mx-auto p-5" src={modalimg} alt="" />
                                     <h3 className="font-bold text-center text-lg">Payment Successfully</h3>
                                     <p className="py-2 text-center">Thanks for purchasing. </p>
                                     <p className="text-center py-2">{
