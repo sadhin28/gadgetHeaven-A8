@@ -27,56 +27,56 @@ const CardList = () => {
 
     //handel button 
     const [data, setdata] = useState([])
-    
+
     const handelModal = () => {
-            const emtydata = localStorage.getItem('gadget-list')
-    
-        if(emtydata === null){
-           toast.error("Place Add to card then Purchase")
-        }
-        else{
-                localStorage.clear();
         const emtydata = localStorage.getItem('gadget-list')
-        
-        setdata(emtydata)
-        setaddcoffee(data)
-      
-        document.getElementById('my_modal_3').showModal()
+
+        if (emtydata === null) {
+            toast.error("Place Add to card then Purchase")
+        }
+        else {
+            localStorage.clear();
+            const emtydata = localStorage.getItem('gadget-list')
+
+            setdata(emtydata)
+            setaddcoffee(data)
+
+            document.getElementById('my_modal_3').showModal()
         }
     }
-   
-    
+
+
     return (
 
         <div>
-          
-           <div className="sticky z-50 top-20 md:top-20">
-             <div className="">
-            
-                <div className="flex bg-base-100 p-4  mt-2 gap-5 justify-between">
-                    <div className="  p-2 md:text-2xl  ">
-                        {
-                            `Total Cost ${totalprice}`
-                        }
-                    </div>
-                    {/* You can open the modal using document.getElementById('ID').showModal() method */}
-                    <div className="">
-                        <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelModal} >Purchase</button>
-                        <dialog id="my_modal_3" className="modal">
-                            <div className="modal-box">
-                                <form method="dialog">
-                                    {/* if there is a button in form, it will close the modal */}
-                                    <button className="btn  btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                </form>
-                                <h3 className="font-bold text-center text-lg">Order Conform</h3>
-                                <p className="py-4">Press ESC key or click on ✕ button to close</p>
-                            </div>
-                        </dialog>
-                    </div>
-                </div>
 
+            <div className="sticky z-50 top-20 md:top-20">
+                <div className="">
+
+                    <div className="flex bg-base-100 p-4  mt-2 gap-5 justify-between">
+                        <div className="  p-2 md:text-2xl  ">
+                            {
+                                `Total Cost ${totalprice}`
+                            }
+                        </div>
+                        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                        <div className="">
+                            <button id="bye-now" className="btn  rounded-3xl text-amber-50 bg-[#9538E2] " onClick={handelModal} >Purchase</button>
+                            <dialog id="my_modal_3" className="modal">
+                                <div className="modal-box">
+                                    <form method="dialog">
+                                        {/* if there is a button in form, it will close the modal */}
+                                        <button className="btn  btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <h3 className="font-bold text-center text-lg">Order Conform</h3>
+                                    <p className="py-4">Press ESC key or click on ✕ button to close</p>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
 
             <div className="grid gap-5 mt-20">
 
