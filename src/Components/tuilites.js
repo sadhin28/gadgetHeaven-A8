@@ -27,6 +27,7 @@ const addToStoredReadList=(id)=>{
     }
 }
 
+//save card to local store
 const saveCartToLs = cart =>{
     const cartStringyfy = JSON.stringify(cart);
     localStorage.setItem('gadget-list',cartStringyfy)
