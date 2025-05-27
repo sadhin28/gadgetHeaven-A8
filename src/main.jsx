@@ -30,6 +30,7 @@ const router = createBrowserRouter([
         element:<Home></Home>,
         loader:()=>fetch('../cagegory.json'),
         children:[
+          
           {
             path:`/gadeget/:category`,
             element:<GadgetContainer></GadgetContainer>,

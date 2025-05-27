@@ -19,6 +19,7 @@ const addToStoredReadList=(id)=>{
     }
     else{
         
+        
         storedList.push(id);
         const storedListstr = JSON.stringify(storedList);
         localStorage.setItem('gadget-list',storedListstr)
