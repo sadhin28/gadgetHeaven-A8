@@ -1,5 +1,17 @@
-import React from 'react';
-
+import React, { PureComponent } from 'react';
+import {
+  ComposedChart,
+  Line,
+  Area,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  Scatter,
+  ResponsiveContainer,
+} from 'recharts';
 const Statistics = () => {
     return (
         <div>
