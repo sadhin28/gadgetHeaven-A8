@@ -1,9 +1,10 @@
-import React from 'react';
+
 import { useLoaderData } from 'react-router-dom';
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const data = useLoaderData()
+    console.log(data)
     return (
       <ResponsiveContainer width="100%" height="100%">
           <BarChart   width={500}
