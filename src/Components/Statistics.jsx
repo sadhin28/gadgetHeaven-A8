@@ -25,7 +25,8 @@ const Statistics = () => {
 
     return (
         <div className='mt-30'>
-            <ResponsiveContainer width="100%" height={400}>
+            <h1 className='text-center mb-20 text-2xl'>Price Chart</h1>
+            <ResponsiveContainer width="100%" height={600}>
               
                   <BarChart width={500}
                     height={400}
