@@ -13,7 +13,7 @@ const Statistics = () => {
           data={data}>
                <XAxis dataKey='name'></XAxis>
                <YAxis dataKey=""></YAxis>
-               <Bar dataKey='price'></Bar>
+               <Bar width={150} dataKey='price'></Bar>
           </BarChart>
          </ResponsiveContainer>
          
